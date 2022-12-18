@@ -14,7 +14,7 @@ require('./config/passport')(passport);
 
 //connect db
 mongoose.set('strictQuery', true);
-mongoose.connect(`mongodb+srv://admin:admin123@cluster0.nii5lem.mongodb.net/my_admin?retryWrites=true&w=majority`, {useNewUrlParser: true})
+mongoose.connect(`mongodb+srv://admin:xyz@cluster0.nii5lem.mongodb.net/my_admin?retryWrites=true&w=majority`, {useNewUrlParser: true})
     .then(console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
